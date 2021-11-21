@@ -1,0 +1,20 @@
+- block:
+    - name: download fira code
+      get_url:
+        url: https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip
+        dest: ~/Downloads/Fira_Code_v5.2.zip
+
+    - name: unzip fira code
+      raw: unzip -u ~/Downloads/Fira_Code_v5.2.zip -d ~/Library/Fonts/
+
+    # NOTE: this task is not working because this zip is uploaded by osdn uploader
+    # so download this font manually via browser.
+    # - name: download gen shin gothic
+    #   get_url:
+    #     url: https://osdn.jp/downloads/users/8/8637/genshingothic-20150607.zip
+    #     dest: ~/Downloads/genshingothic-20150607.zip
+    # - name: unzip gen shin gothic
+    #   raw: unzip -u ~/Downloads/genshingothic-20150607.zip -d ~/Library/Fonts/
+
+  tags:
+    - font
