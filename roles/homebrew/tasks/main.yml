@@ -20,6 +20,7 @@
           - tree
           - wget
           - yarn
+          - zoom
           - zsh
   tags:
     - homebrew
