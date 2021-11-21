@@ -1,9 +1,11 @@
 ---
 - name: Set Up mac
-  hosts: localhost
+  hosts: 127.0.0.1
   connection: local
   gather_facts: no
   become: no
   roles:
     - homebrew
     - homebrew_cask
+    - mac_app_store
+    - font
