@@ -1,0 +1,25 @@
+- block:
+    - name: update homebrew
+      community.general.homebrew:
+        update_homebrew: true
+        upgrade_all: yes
+
+    - name: install homebrew packages
+      community.general.homebrew:
+        name:
+          - ansible
+          - bat
+          - fzf
+          - ghq
+          - git
+          - jq
+          - mas
+          - node
+          - ripgrep
+          - tig
+          - tree
+          - wget
+          - yarn
+          - zsh
+  tags:
+    - homebrew

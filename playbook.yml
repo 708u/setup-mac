@@ -1,4 +1,9 @@
-- hosts: all
+---
+- name: Set Up mac
+  hosts: localhost
   connection: local
   gather_facts: no
   become: no
+  roles:
+    - homebrew
+    - homebrew_cask
