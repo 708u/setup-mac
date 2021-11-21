@@ -2,10 +2,10 @@
     - name: update homebrew
       community.general.homebrew:
         update_homebrew: true
-        upgrade_all: yes
 
     - name: install homebrew packages
       community.general.homebrew:
+        upgrade_all: yes
         name:
           - ansible
           - bat
