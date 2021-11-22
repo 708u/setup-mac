@@ -13,7 +13,3 @@ $ ansible-playbook playbook.yml
 ```
 
 Need to reboot after setup.
-
-TODO
-
-- dotfiles

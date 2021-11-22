@@ -4,9 +4,21 @@
   connection: local
   gather_facts: no
   become: no
+  vars:
+    dotfiles_repo: "git@github.com:708u/dotfiles.git"
+    dotfiles_repo_version: main
+    dotfiles_repo_local_destination: "~/ghq/github.com/708u/dotfiles"
+    dotfiles_home: "~"
+    dotfiles_files:
+      - .config/karabiner/karabiner.json
+      - .gitconfig
+      - .gitignore_global
+      - .zshrc
+
   roles:
     - homebrew
     - homebrew_cask
     - mac_app_store
     - font
     - mac_os
+    - geerlingguy.dotfiles
