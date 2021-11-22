@@ -1,6 +1,6 @@
 # setup-mac
 
-For set up mac environment, maneged by ansible.
+For set up mac environment, managed by ansible.
 
 # Prerequisites
 
