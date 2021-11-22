@@ -5,7 +5,7 @@ For set up mac environment, managed by ansible.
 # Prerequisites
 
 - Sign in app store.
-- Download gen shin Gothic from browser from [here](https://osdn.jp/downloads/users/8/8637/genshingothic-20150607.zip) .
+- Download gen shin Gothic from [here](https://osdn.jp/downloads/users/8/8637/genshingothic-20150607.zip) .
 - Register a public key to github and clone this repo.
 
 ```sh
