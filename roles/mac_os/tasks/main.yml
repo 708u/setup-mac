@@ -52,15 +52,36 @@
     type: int
     value: 2
 
+- name: トラックパッド右クリックの有効化
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.trackpad.trackpadCornerClickBehavior
+    type: int
+    value: 1
+
+- name: トラックパッド右クリックの有効化
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.trackpad.enableSecondaryClick
+    type: bool
+    value: TRUE
+
 - name: トラックパッドタップの有効化
   community.general.osx_defaults:
     domain: com.apple.AppleMultitouchTrackpad
     key: Clicking
+    type: bool
+    value: TRUE
+
+- name: トラックパッドタップの有効化
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.mouse.tapBehavior
     type: int
     value: 1
 
 - name: Dockを自動的に隠す
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.dock
     key: autohide
     type: bool
