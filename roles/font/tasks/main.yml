@@ -1,20 +1,32 @@
 - block:
-    - name: download fira code
-      get_url:
-        url: https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip
-        dest: ~/Downloads/Fira_Code_v5.2.zip
+    - name: determine if fira-code font exists
+      stat:
+        path: ~/Library/Fonts/ttf/FiraCode-Regular.ttf
+      register: firaCode
 
-    - name: unzip fira code
-      raw: unzip -u ~/Downloads/Fira_Code_v5.2.zip -d ~/Library/Fonts/
+    - block:
+      - name: download fira code
+        get_url:
+          url: https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip
+          dest: ~/Downloads/Fira_Code_v5.2.zip
 
-    # NOTE: this task is not working because this zip is uploaded by osdn uploader
+      - name: unzip fira code
+        raw: unzip -u ~/Downloads/Fira_Code_v5.2.zip -d ~/Library/Fonts/
+      when: not firaCode.stat.exists
+
+      tags:
+        - fira_code
+
+    # NOTE: Gen shin gothic is uploaded by osdn uploader
     # so download this font manually via browser.
-    # - name: download gen shin gothic
-    #   get_url:
-    #     url: https://osdn.jp/downloads/users/8/8637/genshingothic-20150607.zip
-    #     dest: ~/Downloads/genshingothic-20150607.zip
-    # - name: unzip gen shin gothic
-    #   raw: unzip -u ~/Downloads/genshingothic-20150607.zip -d ~/Library/Fonts/
+    - name: determine if gen shin gothic font exists
+      stat:
+        path: ~/Downloads/genshingothic-20150607.zip
+      register: genShinGothic
+
+    - name: unzip gen shin gothic
+      raw: unzip -u ~/Downloads/genshingothic-20150607.zip -d ~/Library/Fonts/
+      when: genShinGothic.stat.exists
 
   tags:
     - font
