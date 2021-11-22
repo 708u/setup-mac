@@ -5,7 +5,7 @@ For set up mac environment, managed by ansible.
 # Prerequisites
 
 - sign in app store
-- get ghen shin goshic from browser
+- get gen shin Gothic from browser
 
 ```sh
 $ ./init.sh
