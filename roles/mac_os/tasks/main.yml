@@ -1,0 +1,134 @@
+---
+- name: dark theme
+  community.general.osx_defaults:
+    key: AppleInterfaceStyle
+    type: string
+    value: Dark
+
+- name: キーリピート検知待ち時間
+  community.general.osx_defaults:
+    key: InitialKeyRepeat
+    type: int
+    value: 15
+
+- name: キーリピート間隔時間
+  community.general.osx_defaults:
+    key: KeyRepeat
+    type: int
+    value: 1
+
+- name: バッテリー残量設定
+  community.general.osx_defaults:
+    domain: com.apple.menuextra.battery
+    key: ShowPercent
+    type: string
+    value: YES
+
+- name: menu barにbluetooth表示
+  community.general.osx_defaults:
+    domain: com.apple.menuextra
+    key: bluetooth
+    type: int
+    value: 1
+
+- name: menu barにvolume表示
+  community.general.osx_defaults:
+    domain: NSStatusItem
+    key: com.apple.menuextra.volume
+    type: int
+    value: 1
+
+- name: スクロール速度最大
+  community.general.osx_defaults:
+    domain: com.apple.trackpad
+    key: scaling
+    type: int
+    value: 24
+
+- name: トラックパッド右クリックの有効化
+  community.general.osx_defaults:
+    domain: com.apple.AppleMultitouchTrackpad
+    key: TrackpadCornerSecondaryClick
+    type: int
+    value: 2
+
+- name: トラックパッドタップの有効化
+  community.general.osx_defaults:
+    domain: com.apple.AppleMultitouchTrackpad
+    key: Clicking
+    type: int
+    value: 1
+
+- name: Dockを自動的に隠す
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: TRUE
+
+- name: Dockをすぐに表示する
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: autohide-delay
+    type: float
+    value: 0
+
+- name: Dockのアイコンサイズ変更
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: tilesize
+    type: float
+    value: 55
+
+- name: 隠しファイルをfinder上で可視化
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: AppleShowAllFiles
+    type: bool
+    value: TRUE
+
+- name: finder上でstatus barを表示する
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: ShowStatusBar
+    type: bool
+    value: TRUE
+
+- name: finderをpath barで表示する
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: ShowPathbar
+    type: bool
+    value: TRUE
+
+- name: finderの効果音を無効化
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: FinderSounds
+    type: bool
+    value: FALSE
+
+- name: すべての拡張子を表示する
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleShowAllExtensions
+    type: bool
+    value: TRUE
+
+- name: Fn key 有効化
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.keyboard.fnState
+    type: int
+    value: 1
+
+- name: menu bar 表示
+  community.general.osx_defaults:
+    domain: systemuiserver
+    key: menuExtras
+    type: array
+    value:
+      - "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
+      - "/System/Library/CoreServices/Menu Extras/Battery.menu"
+      - "/System/Library/CoreServices/Menu Extras/Clock.menu"
+      - "/System/Library/CoreServices/Menu Extras/Volume.menu"

@@ -11,3 +11,9 @@ For set up mac environment, maneged by ansible.
 $ ./init.sh
 $ ansible-playbook playbook.yml
 ```
+
+Need to reboot after setup.
+
+TODO
+
+- dotfiles
