@@ -14,6 +14,21 @@
         raw: unzip -u ~/Downloads/Fira_Code_v5.2.zip -d ~/Library/Fonts/
       when: not firaCode.stat.exists
 
+    - name: determine hack gen font exists
+      stat:
+        path: ~/Library/Fonts/HackGenNerd_v2.5.2/HackGenNerd-Regular.ttf
+      register: hackGen
+
+    - block:
+      - name: download hack gen
+        get_url:
+          url: https://github.com/yuru7/HackGen/releases/download/v2.5.2/HackGenNerd_v2.5.2.zip
+          dest: ~/Downloads/HackGenNerd_v2.5.2.zip
+
+      - name: unzip hack gen
+        raw: unzip -u ~/Downloads/HackGenNerd_v2.5.2.zip -d ~/Library/Fonts/
+      when: not hackGen.stat.exists
+
       tags:
         - fira_code
 
