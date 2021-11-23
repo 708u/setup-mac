@@ -17,6 +17,7 @@
 
   roles:
     - geerlingguy.dotfiles
+    - dotfiles
     - font
     - homebrew
     - homebrew_cask
