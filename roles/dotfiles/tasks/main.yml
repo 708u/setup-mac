@@ -6,3 +6,14 @@
 
 - name: change shell to brew zsh
   shell: chsh -s /usr/local/bin/zsh
+
+- name: determine if karabiner setting exists
+  stat:
+    path: ~/.config/karabiner/karabiner.json
+  register: karabiner
+
+- name: copy karabiner setting
+  copy:
+    src: ~/ghq/github.com/708u/dotfiles/.config/karabiner/karabiner.json
+    dest: ~/.config/karabiner/karabiner.json
+  when: not karabiner.stat.exists

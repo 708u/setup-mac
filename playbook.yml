@@ -10,7 +10,6 @@
     dotfiles_repo_local_destination: "~/ghq/github.com/708u/dotfiles"
     dotfiles_home: "~"
     dotfiles_files:
-      - .config/karabiner/karabiner.json
       - .gitconfig
       - .gitignore_global
       - .zshrc
