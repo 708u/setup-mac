@@ -2,6 +2,7 @@
   community.general.homebrew_cask:
     name:
       - alfred
+      - asana
       - appcleaner
       - bettertouchtool
       - cyberduck

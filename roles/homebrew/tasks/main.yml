@@ -8,6 +8,7 @@
         upgrade_all: yes
         name:
           - ansible
+          - anyenv
           - bat
           - exa
           - fd
