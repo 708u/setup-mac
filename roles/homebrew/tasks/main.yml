@@ -16,6 +16,7 @@
           - gh
           - ghq
           - git
+          - grpcurl
           - jq
           - lsd
           - mas
