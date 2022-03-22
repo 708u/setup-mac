@@ -11,6 +11,7 @@
       - dropbox
       - google-chrome
       - google-japanese-ime
+      - graphviz
       - hyperswitch
       - iterm2
       - karabiner-elements
