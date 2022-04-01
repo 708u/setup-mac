@@ -18,6 +18,7 @@
           - git
           - grpcurl
           - jq
+          - just
           - lsd
           - mas
           - node
