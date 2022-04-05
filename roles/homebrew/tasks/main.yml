@@ -16,6 +16,7 @@
           - gh
           - ghq
           - git
+          - go
           - grpcurl
           - jq
           - just
