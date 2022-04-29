@@ -30,5 +30,6 @@
           - wget
           - yarn
           - zsh
+          - zsh-completions
   tags:
     - homebrew
