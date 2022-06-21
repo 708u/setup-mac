@@ -10,6 +10,7 @@
           - ansible
           - anyenv
           - bat
+          - direnv
           - exa
           - fd
           - fzf
