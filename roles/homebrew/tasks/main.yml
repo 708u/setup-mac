@@ -26,6 +26,7 @@
           - procs
           - ripgrep
           - tig
+          - tfenv
           - tree
           - wget
           - yarn
