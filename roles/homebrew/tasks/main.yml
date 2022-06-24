@@ -17,7 +17,8 @@
           - gh
           - ghq
           - git
-          - go
+          - libpng
+          - graphviz # depends on libpng
           - grpcurl
           - jq
           - just
