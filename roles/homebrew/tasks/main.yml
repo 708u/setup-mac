@@ -28,6 +28,7 @@
           - node
           - procs
           - ripgrep
+          - serverless
           - tig
           - tfenv
           - tree

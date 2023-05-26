@@ -9,10 +9,9 @@
       - discord
       - docker
       - dropbox
-      - elgato-stream-deck
+      # - elgato-stream-deck
       - google-chrome
       - google-japanese-ime
-      - graphviz
       - hyperswitch
       - iterm2
       - karabiner-elements
@@ -23,5 +22,6 @@
       - tableplus
       - vagrant
       - visual-studio-code
-      - virtualbox
+      # arm64 dose not supported
+      # - virtualbox
       - zoom
