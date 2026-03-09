@@ -9,33 +9,64 @@
         name:
           - ansible
           - anyenv
+          - awscli
           - bat
           - buf
+          - circleci
           - clang-format
+          - colima
+          - coreutils
+          - deno
           - direnv
+          - dive
+          - docutils
+          - envchain
           - eza
           - fd
+          - figlet
           - fzf
           - gh
           - ghq
           - git
+          - gobject-introspection
+          - grep
           - libpng
           - graphviz # depends on libpng
           - grpcurl
+          - hyperfine
+          - jp2a
           - jq
           - just
+          - k1low/tap/tbls
+          - k1low/tap/tbls-ask
+          - lazydocker
           - lsd
           - mas
-          - node
+          - mysql
+          - parallel
+          - pnpm
           - procs
+          - protobuf
+          - qmk/qmk/qmk
+          - qmmp
           - ripgrep
+          - saml2aws
           - serverless
+          - shellcheck
+          - steipete/tap/gogcli
+          - stripe/stripe-cli/stripe
+          - terminal-notifier
+          - tfenv
+          - tflint
           - tig
           - tmux
-          - tfenv
           - tree
+          - trufflehog
+          - uv
           - wget
           - yarn
+          - yqrashawn/goku/goku
+          - zellij
           - zoxide
           - zsh
           - zsh-completions

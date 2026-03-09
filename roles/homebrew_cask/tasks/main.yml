@@ -3,28 +3,40 @@
     sudo_password: "{{ ansible_become_password }}"
     name:
       - alfred
+      - android-studio
       - asana
       - appcleaner
       - bettertouchtool
+      - claude
+      - cmux
       - cyberduck
       - discord
       - docker
+      - docker-desktop
       - dropbox
+      - elgato-wave-link
       # - elgato-stream-deck
+      - figma
+      - gcloud-cli
+      - ghostty
       - google-chrome
       - google-japanese-ime
+      - goreleaser
       - alt-tab
       - iterm2
       - karabiner-elements
       - ngrok
       - notion
+      - obsidian
+      - orbstack
       - postman
+      - raycast
       - tableplus
+      - twig
       - vagrant
       - visual-studio-code
       - vnc-viewer
-      - ghostty
-      - raycast
+      - warp
       # arm64 dose not supported
       # - virtualbox
       - zoom
