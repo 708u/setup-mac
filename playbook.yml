@@ -4,6 +4,10 @@
   connection: local
   gather_facts: no
   become: no
+  vars_prompt:
+    - name: ansible_become_password
+      prompt: "Enter sudo password"
+      private: true
   vars:
     dotfiles_repo: "git@github.com:708u/dotfiles.git"
     dotfiles_repo_version: main

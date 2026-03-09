@@ -1,5 +1,6 @@
 - name: install homebrew cask packages
   community.general.homebrew_cask:
+    sudo_password: "{{ ansible_become_password }}"
     name:
       - alfred
       - asana
@@ -12,10 +13,9 @@
       # - elgato-stream-deck
       - google-chrome
       - google-japanese-ime
-      - hyperswitch
+      - alt-tab
       - iterm2
       - karabiner-elements
-      - kindle
       - ngrok
       - notion
       - postman
@@ -23,6 +23,8 @@
       - vagrant
       - visual-studio-code
       - vnc-viewer
+      - ghostty
+      - raycast
       # arm64 dose not supported
       # - virtualbox
       - zoom

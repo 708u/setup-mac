@@ -8,13 +8,13 @@
 - name: キーリピート検知待ち時間
   community.general.osx_defaults:
     key: InitialKeyRepeat
-    type: int
+    type: float
     value: 15
 
 - name: キーリピート間隔時間
   community.general.osx_defaults:
     key: KeyRepeat
-    type: int
+    type: float
     value: 1
 
 - name: バッテリー残量設定

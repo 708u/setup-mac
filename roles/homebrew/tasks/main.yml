@@ -10,10 +10,10 @@
           - ansible
           - anyenv
           - bat
-          - bufbuild/buf/buf
+          - buf
           - clang-format
           - direnv
-          - exa
+          - eza
           - fd
           - fzf
           - gh
@@ -31,10 +31,12 @@
           - ripgrep
           - serverless
           - tig
+          - tmux
           - tfenv
           - tree
           - wget
           - yarn
+          - zoxide
           - zsh
           - zsh-completions
   tags:
