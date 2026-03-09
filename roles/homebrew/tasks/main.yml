@@ -3,6 +3,16 @@
       community.general.homebrew:
         update_homebrew: true
 
+    - name: tap third-party homebrew repositories
+      community.general.homebrew_tap:
+        name: "{{ item }}"
+      loop:
+        - k1low/tap
+        - qmk/qmk
+        - steipete/tap
+        - stripe/stripe-cli
+        - yqrashawn/goku
+
     - name: install homebrew packages
       community.general.homebrew:
         upgrade_all: yes
