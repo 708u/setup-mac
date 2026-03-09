@@ -39,6 +39,7 @@
           - ghq
           - git
           - gobject-introspection
+          - goreleaser
           - grep
           - libpng
           - graphviz # depends on libpng

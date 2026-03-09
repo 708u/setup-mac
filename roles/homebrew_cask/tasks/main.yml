@@ -21,7 +21,7 @@
       - ghostty
       - google-chrome
       - google-japanese-ime
-      - goreleaser
+
       - alt-tab
       - iterm2
       - karabiner-elements
@@ -32,7 +32,7 @@
       - postman
       - raycast
       - tableplus
-      - twig
+
       - vagrant
       - visual-studio-code
       - vnc-viewer
